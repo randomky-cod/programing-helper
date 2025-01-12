@@ -61,6 +61,15 @@
             font-size: 1.2rem;
         }
 
+        .section:nth-child(even) {
+            background-color: #fdd7e3;
+        }
+
+        .section:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+
         .gallery {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -99,8 +108,52 @@
             font-size: 0.9rem;
         }
 
+        
+        .suggestions {
+            background-color: #ffdff0;
+            color: white;
+            padding: 40px 20px;
+            max-width: 100%;
+            margin: 0;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .suggestions h2 {
+            color: #d23669;
+            margin-bottom: 15px;
+        }
+
+        .suggestions form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .suggestions input, .suggestions textarea, .suggestions button {
+            padding: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .suggestions button {
+            background-color: #d23669;
+            color: #3b021f;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.3s;
+        }
+
+        .suggestions button:hover {
+            background-color: #c93466;
+            color: white;
+        }
+
         footer {
-            background-color: #3b021f;
+            background-color: #a81f4a;
             color: white;
             text-align: center;
             padding: 15px;
@@ -140,6 +193,33 @@
                 <p>A fun and engaging channel that teaches coding concepts with practical examples.</p>
             </a>
         </div>
+    </section>
+
+    <section class="gallery" id="channels">
+        <div class="card">
+            <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="_blank">
+                <img src="Blac.jpg" alt="Net Ninja">
+                <h3>Net Ninja</h3>
+                <p>Black-belt your web development skills. Over 2000 free programming tutorial videos.</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://www.youtube.com/channel/UCWv7vMbMWH4-V0ZXdmDpPBA" target="_blank">
+                <img src="moch.jpg" alt="Programming with Mosh">
+                <h3>Programming with Mosh</h3>
+                <p>a software engineer with over 20 years of experience.  I'm all about clear, concise, practical coding tutorials no fluff, just the good stuff! </p>
+            </a>
+        </div>
+    </section>
+
+    <section class="suggestions">
+        <h2>Suggest a Channel</h2>
+        <form>
+            <input type="text" placeholder="Channel Name" required>
+            <input type="url" placeholder="Channel URL" required>
+            <textarea placeholder="Why do you recommend this channel?" rows="4" required></textarea>
+            <button type="submit">Submit Suggestion</button>
+        </form>
     </section>
 
     <footer>
