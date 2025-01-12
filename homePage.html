@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Learning Channels</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #fff5f8;
+            color: #3b021f;
+        }
+
+        nav {
+            background-color: rgba(255, 255, 255, 0.95);
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo img {
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        nav .nav-links a {
+            color: #3b021f;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav .nav-links a:hover {
+            background-color: #fdd7e3;
+            color: #d23669;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 15px;
+            background-color: #d23669;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px 0;
+            color: #d23669;
+        }
+
+        .card p {
+            padding: 0 15px 15px;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            background-color: #3b021f;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="OIP.jfif" alt="Logo">
+        </div>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#channels">Channels</a>
+            <a href="details.html">Details</a>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <h1>Programming Learning Channels</h1>
+        <p>Discover some of the best channels that helped me learn programming. Explore and start your journey!</p>
+    </section>
+
+    <section class="gallery" id="channels">
+        <div class="card">
+            <a href="https://www.youtube.com/channel/UCB6dvaWu0N8uVq2yKsZ5s5g" target="_blank">
+                <img src="OIP (2).jfif" alt="SuperSimpleDev">
+                <h3>SuperSimpleDev</h3>
+                <p>Simon Bao makes tech careers accessible to anyone with his simple and effective tutorials.</p>
+            </a>
+        </div>
+        <div class="card">
+            <a href="https://www.youtube.com/channel/UC4SVo0Ue36XCfOyb5Lh1viQ" target="_blank">
+                <img src="unnamed.jpg" alt="Bro Code">
+                <h3>Bro Code</h3>
+                <p>A fun and engaging channel that teaches coding concepts with practical examples.</p>
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Programming Channels. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
